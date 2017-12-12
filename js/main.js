@@ -11,7 +11,6 @@ function init() {
 
 function clicksCounter() {
     clicks += 1;
-    console.log("clicks: " + clicks);
 }
 
 function messageChange() {
@@ -38,12 +37,9 @@ function validation(elem) {
     } else {
         result.textContent = "Enter proper number."
     }
-
 }
 
 function check(myNum) {
-    console.log(myNum);
-    console.log(targetNumber);
     if (myNum == targetNumber) {
         document.getElementById("result").style.color = "green";
         result.textContent = "You win!"
